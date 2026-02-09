@@ -31,9 +31,10 @@ if (savedData) {
 form.addEventListener('submit', onFormSubmit);
 
 function onFormSubmit(event) {
-    event.preventDefault();
-    
+  event.preventDefault();
+
   if (!formData.email || !formData.message) {
+    alert('Fill please all fields');
     return;
   }
   console.log(formData);
